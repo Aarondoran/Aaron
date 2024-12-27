@@ -1,0 +1,162 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    overflow: hidden; /* Disable scroll */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center; /* Center navbar items */
+    align-items: center;
+    background: #1c1c1c;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #6eacda;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #121212;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #6eacda; /* Same style as index.html */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #6eacda;
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #ccc;
+}
+
+.github-link {
+    color: #6eacda;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.github-button-container {
+    margin-top: 30px;
+}
+
+.github-button {
+    background-color: #6eacda;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.github-button:hover {
+    background-color: #03346e;
+}
+
+.email-button {
+    background-color: #6eacda;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.email-button:hover {
+    background-color: #03346e;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background: #1c1c1c;
+        width: 200px;
+        height: calc(100vh - 60px);
+        gap: 20px;
+        padding: 20px;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}

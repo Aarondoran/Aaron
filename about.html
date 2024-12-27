@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Aaron's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Aaron's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-container">
+        <img src="assets/images/pfp.png" alt="Aaron's Profile Picture" class="profile-pic">
+        <h1>About Me</h1>
+        <p class="quote">"I make things"</p>
+        <p>I make website and other things for fun, im familiar with a few coding languages; html css and javascript,</p>
+        <a href="https://github.com/yourgithubusername" class="github-link" target="_blank">Visit my GitHub</a>
+        <div class="github-button-container">
+            <button class="github-button" onclick="showEmail()">Show My Email</button><br><br>
+            <button class="email-button" href="mailto:aarondoran@outlook.ie" id="emailButton" style="display:none;">aaron@example.com</button>
+        </div>
+    </div>
+
+    <script>
+        function showEmail() {
+            document.getElementById("emailButton").style.display = "block";
+        }
+    </script>
+</body>
+</html>
