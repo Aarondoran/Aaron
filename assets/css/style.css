@@ -125,3 +125,76 @@ h1 {
     }
 }
 
+/* Skills Section */
+.skills-section {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.skills-section h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.skills-box {
+    width: 100%;
+}
+
+.skill-item {
+    margin: 15px 0;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-name {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.skill-percentage {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.skill-bar {
+    background-color: #262626;
+    height: 12px;
+    border: 1px solid #0fffb7;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    margin-left: 10px;
+}
+
+.skill-level {
+    background-color: #0fffb7;
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .skills-section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .skills-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .skill-percentage {
+        font-size: 0.9rem;
+    }
+}
