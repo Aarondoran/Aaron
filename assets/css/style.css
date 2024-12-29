@@ -151,18 +151,17 @@ h1 {
     margin: 15px 0;
     text-align: left;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .skill-name {
-    display: inline-block;
-    margin: 0 0 5px 0;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .skill-percentage {
-    float: right;
-    margin-top: -22px;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -174,6 +173,8 @@ h1 {
     border-radius: 4px;
     overflow: hidden;
     position: relative;
+    width: 70%;
+    margin-left: 10px;
 }
 
 .skill-level {
