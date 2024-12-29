@@ -7,7 +7,8 @@ body, html {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     background-color: #121212;
-    overflow: hidden; /* Disable scroll */
+    /* overflow: hidden; */ /* Disable scroll */
+    overflow: auto; /* Enable scroll */
 }
 
 a {
