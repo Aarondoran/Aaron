@@ -49,7 +49,7 @@ a {
 
 /* Main Wrapper */
 .main-wrapper {
-    padding-top: 80px; /* Adjust this value if your navbar height changes */
+    padding-top: 80px;
 }
 
 /* Main Content */
@@ -133,16 +133,21 @@ h1 {
     background-color: #0fffb7;
     height: 100%;
     position: relative;
-    transition: width 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.skill-label {
+    position: absolute;
+    right: 5px;
+    color: #000;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
 
-.skill-bar .skill-level {
+.skill-level:hover .skill-label {
     color: #fff;
-}
-
-.skill-level:not(:hover) {
-    overflow: hidden;
 }
 
 /* Media Query */
@@ -165,13 +170,4 @@ h1 {
         text-align: center;
         margin-bottom: 5px;
     }
-
-    .skill-bar {
-        flex-grow: 1;
-    }
-
-    .skill-level {
-        font-size: 0.8rem;
-    }
 }
-
