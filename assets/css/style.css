@@ -47,6 +47,11 @@ a {
     color: #6eacda;
 }
 
+/* Main Wrapper */
+.main-wrapper {
+    padding-top: 80px; /* Adjust this value if your navbar height changes */
+}
+
 /* Main Content */
 .main-container {
     display: flex;
